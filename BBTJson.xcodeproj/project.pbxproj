@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92DD49A1DC2AE2300B941BF /* WebViewCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD4991DC2AE2300B941BF /* WebViewCon.swift */; };
 		F944066A1DC147AB0052C565 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94406691DC147AB0052C565 /* TableViewCell.swift */; };
 		F9D1796E1DC126540077E767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1796D1DC126540077E767 /* AppDelegate.swift */; };
 		F9D179701DC126540077E767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1796F1DC126540077E767 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92DD4991DC2AE2300B941BF /* WebViewCon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewCon.swift; sourceTree = "<group>"; };
 		F94406691DC147AB0052C565 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F9D1796A1DC126540077E767 /* BBTJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBTJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D1796D1DC126540077E767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F9D179761DC126540077E767 /* LaunchScreen.storyboard */,
 				F9D179791DC126540077E767 /* Info.plist */,
 				F94406691DC147AB0052C565 /* TableViewCell.swift */,
+				F92DD4991DC2AE2300B941BF /* WebViewCon.swift */,
 			);
 			path = BBTJson;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92DD49A1DC2AE2300B941BF /* WebViewCon.swift in Sources */,
 				F944066A1DC147AB0052C565 /* TableViewCell.swift in Sources */,
 				F9D179701DC126540077E767 /* ViewController.swift in Sources */,
 				F9D1796E1DC126540077E767 /* AppDelegate.swift in Sources */,
