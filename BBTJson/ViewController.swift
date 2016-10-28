@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var actorsArray = [AnyObject]()
+    var selectedRow: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     let url = NSURL(string: "http://thecodeeasy.com/test/swiftjson.json")!
@@ -69,10 +71,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
-   
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedRow = indexPath.row
+        self.performSegue(withIdentifier: "seeVideo", sender: self)
+    }
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "seeVideo") {
+            if let webViewController = segue.destination as? WebViewCon {
+                let selectedActor = actorsArray[selectedRow] as! NSDictionary
+//                if let link = selectedActor["image"] as! String? {
+                if let link = selectedActor["link"] as! String? {
+                    print("link = \(link)")
+                    webViewController.link = URL(string: link)
+                }
+            }
+        }
+    }
 }
 
